@@ -1,0 +1,66 @@
+habanero is a low level client for working with the Crossref search API 
+
+Crossref is a Digital object identifier (DOI) used to uniquely identify objects such as academic papers and scientific reports. Crossref offers an API (Application Program Interface) that can be used to search for such reports, making communication in research easier.
+
+Full details of Crossref can be found here: https://www.crossref.org/
+
+To view the documentation and source code for habanero, go to https://github.com/sckott/habanero
+
+To install, open a new Python notebook
+    On the top right of the home screen, click new. Then click Python. This will open up a new Python Jupyter Notebook.
+
+Click on the first cell and type:
+
+    %pip install habanero
+
+To run the cell use the controls "CMD + ENTER" (Mac) or "CTRL + ENTER" (Windows or Linux)
+
+You now have habanero installed in the notebook and can now use it in your project!
+
+To test if the package is installed, create a new cell by clicking the plus (+) sign on the top left corner and run the following lines of code
+
+    from habanero import Crossref
+    cr = Crossref()
+    x = cr.works(query = "ecology")
+    x['message']
+
+This should display works related to "ecology", including information such as abstraction, total results, items, etc
+    
+    
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+The goal of emo(ji) is to make it very easy to insert emoji into RMarkdown documents.
+
+The documentation for the package can be found here https://github.com/hadley/emo
+
+First open a new R notebook. 
+    From the home screen click the `new` button on the top right corner and click 'R'
+
+We install the package directly in the notebook. Click on the first cell and type the following lines of code.
+
+    install.packages("devtools")
+    devtools::install_github("hadley/emo")
+   
+To run the cell use the controls "CMD + ENTER" (Mac) or "CTRL + ENTER" (Windows or Linux)
+ 
+You now have the package installed in your notebook and can be used for you project!
+
+To test to see if the package is installed, create a new cell by clicking the plus (+) sign on the top left corner.
+
+Run the code below
+
+    emo::ji("poop")
+
+If an emoji of a "poop" shows on your screen then the package has succesfully been installed!
+
+We can replace "poop" with "smile" to print out a smile emoji
+
+Other keywords found here https://github.com/hadley/emo
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+** Note that for both Python and R notebooks, the package will remained installed only for the length of the server. Meaning after the server has been terminated, you will have to reinstall the packages when starting a new server.
+    
+    
